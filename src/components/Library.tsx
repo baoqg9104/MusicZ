@@ -13,6 +13,7 @@ function Library() {
           <h3 className="mb-4">Popular Artists</h3>
           <div>
             <Artist name="Sơn Tùng M-TP" img={mtp}></Artist>
+            <Artist name="W/N" img="https://i.scdn.co/image/ab67616100005174316c0f0bc6cf3a29c203ab1e"></Artist>
           </div>
         </div>
       </div>
