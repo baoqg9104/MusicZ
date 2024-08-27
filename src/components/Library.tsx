@@ -164,13 +164,13 @@ function Library() {
                 img="https://i.scdn.co/image/ab67616d00001e02ccc76f160c5ba1da853530ae"
                 name="Chẳng Thể Tìm Được Em"
                 artist="PhucXp"
-                audioUrl="src\assets\music\changthetimduocem.mp3"
+                audioUrl="changthetimduocem.mp3"
               ></Song>
               <Song
                 img="https://i.scdn.co/image/ab67616d0000b2738898ca25107af040f275a749"
                 name="Bông Hoa Đẹp Nhất"
                 artist="Quân AP"
-                audioUrl="src\assets\music\bonghoadepnhat.mp3"
+                audioUrl="bonghoadepnhat.mp3"
               ></Song>
             </div>
             <button
