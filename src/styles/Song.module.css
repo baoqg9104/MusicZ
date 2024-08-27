@@ -1,0 +1,26 @@
+.songCard {
+  width: 220px;
+}
+
+.songCard img {
+  height: 220px;
+  cursor: pointer;
+}
+
+.songCard p {
+  font-size: 17px;
+}
+
+@media (max-width: 575.98px) {
+  .songCard {
+    width: 180px;
+  }
+
+  .songCard img {
+    height: 180px;
+  }
+
+  .songCard p {
+    font-size: 15px;
+  }
+}

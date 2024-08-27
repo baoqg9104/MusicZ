@@ -1,0 +1,55 @@
+.showAll {
+  color: rgb(193, 193, 193);
+  font-size: 18px;
+}
+
+.showAll:hover {
+  cursor: pointer;
+  /* text-decoration: underline; */
+  color: white;
+}
+
+.artistWrapper {
+  display: flex;
+  /* gap: 20px; */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.artistWrapper > * {
+  flex: 0 0 auto; /* Prevent items from shrinking */
+}
+
+.scrollButton {
+  /* font-size: 18px; */
+  right: 30px;
+  top: 180px;
+
+  height: 180px;
+  width: 30px;
+  display: flex;
+  /* border: 1px solid white !important; */
+
+}
+
+/* Ẩn thanh cuộn trên trình duyệt WebKit (Chrome, Safari) */
+@media (min-width: 992px) {
+  .artistWrapper::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Ẩn thanh cuộn trên các trình duyệt khác */
+@media (min-width: 992px) {
+  .artistWrapper {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+@media (max-width: 575.98px) {
+  .showAll {
+    font-size: 15px;
+  }
+}

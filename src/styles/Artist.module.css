@@ -1,0 +1,27 @@
+.artistCard {
+  width: 180px;
+
+}
+
+.artistCard img {
+  height: 180px;
+  cursor: pointer;
+}
+
+.artistCard p {
+  font-size: 19px;
+}
+
+@media (max-width: 575.98px) {
+  .artistCard {
+    width: 160px;
+  }
+
+  .artistCard img {
+    height: 160px;
+  }
+
+  .artistCard p {
+    font-size: 16px;
+  }
+}

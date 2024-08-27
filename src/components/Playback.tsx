@@ -1,24 +1,17 @@
-import styles from "../styles/Playback.module.css"
+import { useContext } from "react";
+import { SongContext } from "./SongContext";
+import AudioPlayer from "react-h5-audio-player"
+import "react-h5-audio-player/lib/styles.css"
 
 function Playback() {
+  const { selectedSong } = useContext(SongContext)!;
+
   return (
     <>
-      <div className={`container-fluid position-fixed bottom-0 ${styles.container}`}>
-        <div className="row">
-          <div className="col-2">
-
-          </div>
-          <div className="col-2">
-
-          </div>
-          <div className="col-6">
-
-          </div>
-          <div className="col-2">
-
-          </div>
-        </div>
-      </div>
+      <AudioPlayer
+        autoPlay
+        src={selectedSong?.audioUrl}
+      />
     </>
   );
 }
