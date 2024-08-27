@@ -140,25 +140,25 @@ function Library() {
                 img="https://i.scdn.co/image/ab67616d00001e02a1bc26cdd8eecd89da3adc39"
                 name="Đừng Làm Trái Tim Anh Đau"
                 artist="Sơn Tùng M-TP"
-                audioUrl="src\assets\music\spotifydown.com - Đừng Làm Trái Tim Anh Đau.mp3"
+                audioUrl="dunglamtraitimanhdau.mp3"
               ></Song>
               <Song
                 img={_24}
                 name="2 4"
                 artist="W/N"
-                audioUrl="src\assets\music\spotifydown.com - 2 4.mp3"
+                audioUrl="24.mp3"
               ></Song>
               <Song
                 img="https://i.scdn.co/image/ab67616d00001e02dc031e2429585e32b4ccb69b"
                 name="id 072019"
                 artist="W/N"
-                audioUrl="src\assets\music\spotifydown.com - id 072019.mp3"
+                audioUrl="id072019.mp3"
               ></Song>
               <Song
                 img="https://i.scdn.co/image/ab67616d00001e02123c7870fc7a0a61c0ab4012"
                 name="Như Anh Đã Thấy Em"
                 artist="PhucXp"
-                audioUrl="src\assets\music\spotifydown.com - Như Anh Đã Thấy Em.mp3"
+                audioUrl="nhuanhdathay.mp3"
               ></Song>
               <Song
                 img="https://i.scdn.co/image/ab67616d00001e02ccc76f160c5ba1da853530ae"
