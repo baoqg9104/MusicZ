@@ -1,0 +1,7 @@
+.songPlaylistCard {
+  cursor: pointer;
+}
+
+.songPlaylistCard:hover {
+  background-color: #192136;
+}

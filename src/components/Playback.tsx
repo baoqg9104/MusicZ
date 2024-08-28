@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { SongContext } from "./SongContext";
 import AudioPlayer from "react-h5-audio-player";
-// import "react-h5-audio-player/lib/styles.css";
 import styles from "../styles/Playback.module.css";
 import "/public/styles.css"
 
@@ -31,7 +30,7 @@ function Playback() {
                 <p className="m-0">{selectedSong?.name}</p>
                 <p
                   className="m-0"
-                  style={{ fontSize: "15px", color: "#838383" }}
+                  style={{ fontSize: "15px", color: "#999999" }}
                 >
                   {selectedSong?.artist}
                 </p>

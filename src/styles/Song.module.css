@@ -24,3 +24,46 @@
     font-size: 15px;
   }
 }
+
+.playBtn {
+  position: relative;
+  top: -70px;
+  right: -152px;
+  height: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.songCard:hover .playBtn {
+  display: block;
+}
+
+.playBtn:hover :only-child {
+  color: #1cff6c !important;
+  font-size: 63px !important;
+  position: relative;
+  top: 1px;
+  left: -1px;
+
+}
+
+
+.addToPlaylist {
+  position: relative;
+  height: 0;
+  top: -55px;
+  left: 15px;
+  cursor: pointer;
+  display: none;
+}
+
+.songCard:hover .addToPlaylist {
+  display: block;
+}
+
+.addToPlaylist:hover :only-child {
+  font-size: 47px !important;
+  position: relative;
+  top: -1px;
+  left: -1px;
+}
