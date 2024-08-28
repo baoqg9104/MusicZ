@@ -1,6 +1,6 @@
 import SongPlaylist from "./SongPlaylist";
 import _24 from "../assets/music/24.jpg";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { SongPlaylistContext } from "./SongPlaylistContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
