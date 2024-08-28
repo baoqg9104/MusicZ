@@ -3,9 +3,23 @@ import { SongContext } from "./SongContext";
 import AudioPlayer from "react-h5-audio-player";
 import styles from "../styles/Playback.module.css";
 import "/public/styles.css"
+import { SongPlaylistContext } from "./SongPlaylistContext";
 
 function Playback() {
-  const { selectedSong } = useContext(SongContext)!;
+  const { selectedSong, setSelectedSong } = useContext(SongContext)!;
+  const { playlist } = useContext(SongPlaylistContext)!;
+
+  const handleSongEnd = () => {
+    const currentIndex = playlist.findIndex(
+      (song) => song.audioUrl === selectedSong?.audioUrl
+    );
+    const nextIndex = currentIndex + 1;
+    if (nextIndex < playlist.length) {
+      setSelectedSong(playlist[nextIndex]);
+    } else {
+      setSelectedSong(playlist[0]); // Stop playback or loop to the first song
+    }
+  };
 
   return (
     <>
@@ -41,6 +55,7 @@ function Playback() {
                 autoPlay
                 src={selectedSong?.audioUrl}
                 className={`${styles.audioPlayer}`}
+                onEnded={handleSongEnd}
               />
             </div>
           </div>

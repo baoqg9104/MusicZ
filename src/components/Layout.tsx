@@ -7,8 +7,8 @@ import { SongPlaylistProvider } from "./SongPlaylistContext";
 function Layout() {
   return (
     <>
-      <SongProvider>
-        <SongPlaylistProvider>
+      <SongPlaylistProvider>
+        <SongProvider>
           <div className="container-fluid">
             <div className="row">
               <div className="col-3 p-0" style={{ backgroundColor: "#101727" }}>
@@ -20,8 +20,8 @@ function Layout() {
             </div>
           </div>
           <Playback></Playback>
-        </SongPlaylistProvider>
-      </SongProvider>
+        </SongProvider>
+      </SongPlaylistProvider>
     </>
   );
 }

@@ -14,8 +14,6 @@ interface SongPlaylistContextType {
   playlist: Song[];
   addSongToPlaylist: (song: Song) => void;
   removeSongFromPlaylist: (audioUrl: string) => void;
-  currentSongIndex: number;
-  playNextSong: () => void;
 }
 
 // Tạo context với giá trị mặc định
@@ -28,7 +26,6 @@ export const SongPlaylistProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
   const [playlist, setPlaylist] = useState<Song[]>([]);
-  const [currentSongIndex, setCurrentSongIndex] = useState<number>(0);
 
   const addSongToPlaylist = (song: Song) => {
     const isSongInPlaylist = playlist.some(
@@ -46,13 +43,9 @@ export const SongPlaylistProvider: React.FC<{ children: ReactNode }> = ({
     );
   };
 
-  const playNextSong = () => {
-    setCurrentSongIndex((prevIndex) => (prevIndex + 1) % playlist.length);
-  };
-
   return (
     <SongPlaylistContext.Provider
-      value={{ playlist, addSongToPlaylist, removeSongFromPlaylist, currentSongIndex, playNextSong }}
+      value={{ playlist, addSongToPlaylist, removeSongFromPlaylist }}
     >
       {children}
     </SongPlaylistContext.Provider>

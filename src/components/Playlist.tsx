@@ -4,10 +4,19 @@ import { useContext } from "react";
 import { SongPlaylistContext } from "./SongPlaylistContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
-import styles from "../styles/Playlist.module.css"
+import styles from "../styles/Playlist.module.css";
+import { SongContext } from "./SongContext";
 
 function Playlist() {
   const { playlist } = useContext(SongPlaylistContext)!;
+  const { setSelectedSong } = useContext(SongContext)!;
+
+  const handlePlayPlaylist = () => {
+    if (playlist.length > 0) {
+      setSelectedSong(playlist[0]);
+    }
+    
+  };
 
   return (
     <>
@@ -18,14 +27,16 @@ function Playlist() {
           </div>
           <div className={`col-8 ${styles.playBtn}`}>
             <FontAwesomeIcon
-              icon={faCirclePlay}   
+              icon={faCirclePlay}
               style={{ color: "#1ed760", fontSize: "40px", cursor: "pointer" }}
+              onClick={handlePlayPlaylist}
             />
           </div>
         </div>
         <div className={`row`}>
           {playlist.map((song, index) => (
             <SongPlaylist
+              key={index}
               id={(index + 1).toString()}
               img={song.img}
               name={song.name}
