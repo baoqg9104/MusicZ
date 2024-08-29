@@ -6,6 +6,7 @@ import { useRef } from "react";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Song from "./Song";
+import { Link } from "react-router-dom";
 
 function Library() {
   const artistScrollRef = useRef<HTMLDivElement>(null);
@@ -59,12 +60,13 @@ function Library() {
         <div className="row mt-5">
           <div className="d-flex mb-4 align-items-center justify-content-between">
             <h3 className="d-inline-block">Popular Artists</h3>
-            <h6
-              className={`d-inline-block me-lg-4 mt-2 ${styles.showAll}`}
-              style={{}}
+            <Link
+              className={`d-inline-block me-lg-4 mt-2 fw-semibold ${styles.showAll}`}
+              style={{textDecoration: "none"}}
+              to="/MusicZ/AllArtist"
             >
               Show all
-            </h6>
+            </Link>
           </div>
           <div className="d-flex">
             <button
@@ -114,12 +116,13 @@ function Library() {
         <div className="row mt-3">
           <div className="d-flex mb-4 align-items-center justify-content-between">
             <h3 className="d-inline-block">Popular Song</h3>
-            <h6
-              className={`d-inline-block me-lg-4 mt-2 ${styles.showAll}`}
-              style={{}}
+            <Link
+              className={`d-inline-block me-lg-4 mt-2 fw-semibold ${styles.showAll}`}
+              style={{textDecoration: "none"}}
+              to="/MusicZ/AllSong"
             >
               Show all
-            </h6>
+            </Link>
           </div>
           <div className="d-flex">
             <button
