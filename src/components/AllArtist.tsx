@@ -1,6 +1,7 @@
 import Artist from "./Artist";
 import mtp from "../assets/artists/mtp.jpg";
-import thanhdat from "../assets/artists/thanhdat.jpg"
+import thanhdat from "../assets/artists/thanhdat.jpg";
+import quanap from "../assets/artists/quanap.jpg";
 
 function AllArtist() {
   return (
@@ -31,13 +32,39 @@ function AllArtist() {
               name="PhucXp"
               img="https://i.scdn.co/image/ab676161000051742d730a3ebb6723d917887847"
             ></Artist>
+            <Artist name="Thành Đạt" img={thanhdat}></Artist>
+            <Artist name="Quân A.P" img={quanap}></Artist>
             <Artist
-              name="Thành Đạt"
-              img={thanhdat}
+              name="MONO"
+              img="https://i.scdn.co/image/ab676161000051748221305ea63809ddb999fbc4"
             ></Artist>
             <Artist
-              name="Quân A.P"
-              img="src\assets\artists\quanap.jpg"
+              name="Phát Huy T4"
+              img="https://i.scdn.co/image/ab6761610000517460abb110a775c765cc2f9f36"
+            ></Artist>
+            <Artist
+              name="H-Kray"
+              img="https://i.scdn.co/image/ab6761610000517498481c9b6f6aefcd4d5b0a28"
+            ></Artist>
+            <Artist
+              name="TLong"
+              img="https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/7/a/0/c/7a0cf55c785497b853fb59c2d056cae2.jpg"
+            ></Artist>
+            <Artist
+              name="Thanh Hưng"
+              img="https://i.scdn.co/image/ab67616100005174394f4bba5e758ad7adc00a3c"
+            ></Artist>
+            <Artist
+              name="Lâm Tuấn"
+              img="https://i.scdn.co/image/ab67616100005174015d202bd46a1cbee46491ef"
+            ></Artist>
+            <Artist
+              name="Quang Đăng Trần"
+              img="https://i.scdn.co/image/ab67616100005174291fbc5a2a9f4695b74b29ff"
+            ></Artist>
+            <Artist
+              name="Nhật Phong"
+              img="https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_jpeg/avatars/4/c/2/1/4c21ee2fdbf40b1cb9090d6eda4151ef.jpg"
             ></Artist>
           </div>
         </div>

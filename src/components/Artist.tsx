@@ -8,7 +8,7 @@ interface Props {
 function Artist({ name, img }: Props) {
   return (
     <>
-      <div className={`d-inline-block ${styles.artistCard}`} style={{ marginRight: "30px"}}>
+      <div className={`d-inline-block ${styles.artistCard}`} style={{ marginRight: "20px"}}>
         <div style={{borderRadius: "90%"}}>
           <img src={img} className="w-100" style={{borderRadius: "90%"}} alt="" />
         </div>
